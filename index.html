@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ptBR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>LuidyMoura</title>
+</head>
+<body>
+    <script>
+        let valor = 45;
+
+        arrayOut = ['']
+        montaArray =(valor, arrayOut) =>{
+            for(let i= 1; i <= valor; i++){
+                aux = ""
+                if(i%5 == 0) aux = "Luidy"
+                if(i%9 == 0) aux = aux+"Moura"
+                if(!aux == ""){
+                    arrayOut.push(aux)
+        } else arrayOut.push(i)
+    } 
+    return arrayOut
+        
+    }    
+    
+arrayOut = montaArray(valor, arrayOut)
+console.log(arrayOut)
+        
+
+    </script>
+</body>
+</html>
